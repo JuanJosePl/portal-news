@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark-primary text-text-primary min-h-screen font-sans;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-dark-secondary rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300;
+  }
+  
+  .btn {
+    @apply px-4 py-2 rounded-md transition-colors duration-300 font-bold;
+  }
+  
+  .btn-primary {
+    @apply bg-highlight text-white hover:bg-opacity-90;
+  }
+}
